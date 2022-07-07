@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import MyComponent from "./MyComponent";
 import AsadbekComponent from "./AsadbekComponent";
 import Counter from "./Counter";
+import FindBigger from "./FindBigger";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +14,8 @@ root.render(
     {/*  <AsadbekComponent/>*/}
     {/*<MyComponent/>*/}
     {/*  <App/>*/}
-      <Counter/>
+    {/*  <Counter/>*/}
+      <FindBigger/>
   </React.StrictMode>
 );
 
