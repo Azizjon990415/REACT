@@ -7,6 +7,7 @@ import MyComponent from "./MyComponent";
 import AsadbekComponent from "./AsadbekComponent";
 import Counter from "./Counter";
 import FindBigger from "./FindBigger";
+import AxiosPostExapmle from "./AxiosPostExapmle";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +16,8 @@ root.render(
     {/*<MyComponent/>*/}
     {/*  <App/>*/}
     {/*  <Counter/>*/}
-      <FindBigger/>
+    {/*  <FindBigger/>*/}
+      <AxiosPostExapmle>/</AxiosPostExapmle>
   </React.StrictMode>
 );
 
