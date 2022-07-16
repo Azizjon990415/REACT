@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Map from "./Map"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css"
+import React ,{Component} from "react";
+
+class App extends Component {
+  constructor() {
+    super()
+    this.state = { center: [0, 0] }
+  }
+  changeCenter = center => () => {
+    this.setState({ center })
+  }
+  render() {
+    return (
+        <div style={{ textAlign: "center" }}>
+          <div style={{ padding: "1rem 0" }}>
+            <button
+                className="btn"
+                onClick={this.changeCenter([-122.4194, 37.7749])}
+            >
+              {"San Francisco"}
+            </button>
+            <button
+                className="btn"
+                onClick={this.changeCenter([151.2093, -33.8688])}
+            >
+              {"Sydney"}
+            </button>
+          </div>
+          <Map center={this.state.center} />
+        </div>
+    )
+  }
 }
-
-export default App;
+export default App

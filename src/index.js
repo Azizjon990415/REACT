@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
 import MyComponent from "./MyComponent";
 import AsadbekComponent from "./AsadbekComponent";
 import Counter from "./Counter";
 import FindBigger from "./FindBigger";
+import MathematicalPow from "./MathematicalPow";
+import App from "./App";
+import AxiosExample from "./AxiosExample";
+import BookComponent from "./BookComponent";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +19,9 @@ root.render(
     {/*<MyComponent/>*/}
     {/*  <App/>*/}
     {/*  <Counter/>*/}
-      <FindBigger/>
+    {/*  <MathematicalPow/>*/}
+    <BookComponent/>
+
   </React.StrictMode>
 );
 
